@@ -1,8 +1,281 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-a {
-  color: #00B7FF;
+/**********************
+    INDEX PAGE HEADER
+**********************/
+.hero{
+   /* Sizing */
+   width: 100%;
+   height: 100vh;
+   
+   /* Flexbox stuff */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   /* Text styles */
+   text-align: center;
+   color: white; /* ADD THIS LINE */
+   
+   /* Background styles */
+   background-image: url('https://images.unsplash.com/photo-1529687689219-26c9753fd19a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+#center{
+
+  width: 20em;
+}
+#top{
+  position: absolute;
+  width: 7em;
+  top: 7%;
+  left: 46.5%;
+  transition: all .2s ease-in-out;
+}
+#left{
+  position: absolute;
+  width: 7em;
+  left: 28%;
+  top: 40%;
+  transition: all .2s ease-in-out;
+}
+#right{
+  position: absolute;
+  width: 7em;
+  top: 40%;
+  right: 27%;
+  transition: all .2s ease-in-out;
+}
+#top:hover,#left:hover,#right:hover{
+  transform: scale(1.1);
+}
+#scroll{
+  position: absolute;
+  font-size: 1.4em;
+  top: 80%;
+  left: 47%;
+  color: #EB7023;
+  transition: all .2s ease-in-out;
+}
+#scroll:hover{
+  transform: scale(1.1);
+}
+/* side nav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Icon animation */
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.wrapper{
+  /* background-color: #f2f1e7; */
+  position: relative;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+#intro{
+  width: 100%;
+  background: white;
+  text-align: justify;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+#intro h1{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10%;
+  line-height: 1.3em;
+  padding-bottom: 6%;
+}
+#intro span{
+  color: #EB7023;
+}
+#intro p{
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  color: #818181; 
+}
+#intro img{
+  width: 80%;
+  height: auto;
+  /* object-fit: cover; */
+}
+#sample{
+  width: 100%;
+  background: white;
+  margin-bottom: 6%;
+}
+#sample h1{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3em;
+  padding-bottom: 2%;
+}
+#sample span{
+  color: #EB7023;
+}
+#subtitle{
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  color: #818181; 
+}
+
+/* CARD STYLE */
+#no-border{
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5%;
+}
+.card img{
+  height: 15em;
+  width: 100%;
+  transition: all .2s ease-in-out;
+}
+.card:hover img{
+  transform: scale(1.01);
+}
+.card:hover .card-body{
+  background: rgb(250, 163, 109);
+}
+.card:hover #price{
+  color: black;
+}
+.card:hover .card-text{
+  color: black;
+}
+.card-body{
+  background: #f9f9ff;
+}
+.card-text{
+  font-family: 'Montserrat', sans-serif;
+  color: #818181; 
+}
+#price{
+  color: #EB7023;
+}
+
+/* Fresh ingre */
+#fresh{
+  height: 40vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 5%;
+  margin-bottom: 9%;
+  
+  font-family: 'Montserrat', sans-serif;
+   /* Text styles */
+  text-align: center;
+  color: white;
+  font-weight: bold;
+
+  background-image: url('https://images.unsplash.com/photo-1533841175647-39fea57b86ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#fresh .btn{
+  margin-top: 2%;
+}
+
+/* Mix and match */
+#mix{
+  width: 100%;
+  background: white;
+  margin-bottom: 6%;
+}
+#mix h1{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3em;
+  padding-bottom: 1%;
+  text-align: center;
+}
+#mix h2{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3em;
+  font-size: 2.5em;
+}
+#mix span{
+  color: #EB7023;
+}
+#types{
+  border: 2px solid red;
+  padding-left: 13%;
+}
+#types p{
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  color: #818181; 
+}
+#types h3, #types h6{
+  color: #EB7023;
+}
+#sides{
+  width: 90%;
+  height: 18em;
+  object-fit: cover;
+  margin-bottom: 20%;
+}
+
+/* carousel */
+#carousel{
+width: 100%;
+height: auto;
+border: 2px solid red;
+}
+.carosel-inner img{
+  height: 2em;
 }
