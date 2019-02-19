@@ -123,7 +123,8 @@ body {
   /* background-color: #f2f1e7; */
   position: relative;
   padding-top: 1%;
-  padding-bottom: 1%;
+  padding-bottom: 0;
+  border-bottom: #818181 solid 1px;
 }
 #intro{
   width: 100%;
@@ -204,6 +205,7 @@ body {
 }
 #price{
   color: #EB7023;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Fresh ingre */
@@ -251,7 +253,6 @@ body {
   color: #EB7023;
 }
 #types{
-  border: 2px solid red;
   padding-left: 13%;
 }
 #types p{
@@ -260,6 +261,9 @@ body {
   text-align: justify;
   color: #818181; 
 }
+#types ul{
+  color: #818181;
+}
 #types h3, #types h6{
   color: #EB7023;
 }
@@ -267,15 +271,48 @@ body {
   width: 90%;
   height: 18em;
   object-fit: cover;
-  margin-bottom: 20%;
+  margin-bottom: 15%;
 }
 
-/* carousel */
-#carousel{
-width: 100%;
-height: auto;
-border: 2px solid red;
+/* Footer */
+#footer{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #131230;
+  color: white;
+  padding-top: 3%;
+  padding-left: 20%;
+  padding-bottom: 3%;
+  border-bottom: #818181 solid .5px;
 }
-.carosel-inner img{
-  height: 2em;
+#footer p{
+  color: #818181;
+}
+
+#copyright{
+  padding-top: 3%;
+}
+
+
+/************************* 
+        Menu page style
+**************************/
+#menu{
+  height: 50vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 5%;
+  margin-bottom: 9%;
+  
+  font-family: 'Montserrat', sans-serif;
+   /* Text styles */
+  text-align: center;
+  color: white;
+  font-weight: bold;
+
+  background-image: url('https://images.unsplash.com/photo-1534963063257-6b65b54e438b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80');
+  background-size: cover;
+  background-position:  bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ object-position: bottom;
 }
