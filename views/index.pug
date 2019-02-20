@@ -1,25 +1,15 @@
 extends layout
 
 block content
-  #mySidenav.sidenav
-    .closebtn ×
-    a(href='#') About
-    a(href='#') Services
-    a(href='#') Clients
-    a(href='#') Contact
   .hero
     .hero-inner
       img#center(src="/images/icon.png", alt="")
       a(href=""): img#top(src="/images/home.png", alt="")
-      a(href=""): img#left(src="/images/menu.png", alt="")
+      a(href="/menu"): img#left(src="/images/menu.png", alt="")
       a(href=""): img#right(src="/images/order.png", alt="")
-      a(href=""): span#scroll SCROLL
+      span#scroll SCROLL
         br  
         i.fas.fa-arrow-down
-      span#open
-        .bar1
-        .bar2
-        .bar3 
   .wrapper
     .container#intro
       .row
@@ -113,7 +103,7 @@ block content
               | Chicken mixed with broccoli swiss cheese and of course ranch sauce
     .container-fluid#fresh
       h1 Natural ingredients and testy food
-      a(href="")
+      a(href="/menu")
         button.btn.btn-warning Menu
     .container#mix
       h1 

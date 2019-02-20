@@ -12,6 +12,17 @@ html
     script(src="/javascripts/main.js")
     
   body
+    #mySidenav.sidenav
+      .closebtn ×
+      a(href='#') Home
+      a(href='#') Menu
+      a(href='#') Place Order
+      a(href='javascript:void(0)')#contact Contact
+    span#open
+        .bar1
+        .bar2
+        .bar3 
+        | Menu
     block content
     .container-fluid#footer
       .row
