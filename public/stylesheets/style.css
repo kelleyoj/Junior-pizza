@@ -122,13 +122,13 @@ body {
   position: absolute;
   width: 7em;
   top: 7%;
-  left: 46.5%;
+  left: 46%;
   transition: all .2s ease-in-out;
 }
 #left{
   position: absolute;
   width: 7em;
-  left: 28%;
+  left: 27%;
   top: 40%;
   transition: all .2s ease-in-out;
 }
@@ -155,7 +155,6 @@ body {
 }
 
 .wrapper{
-  /* background-color: #f2f1e7; */
   position: relative;
   padding-top: 1%;
   padding-bottom: 0;
@@ -249,7 +248,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   padding-top: 5%;
-  margin-bottom: 9%;
+  margin-bottom: 7%;
   
   font-family: 'Montserrat', sans-serif;
    /* Text styles */
@@ -309,7 +308,7 @@ body {
   margin-bottom: 15%;
 }
 /* place order */
-#place-order{
+.place-order{
   height: 50vh;
   padding-left: 0;
   padding-right: 0;
@@ -327,7 +326,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#place-order img{
+.place-order img{
   width: 100%;
   height: 50vh;
   z-index: 10;
@@ -380,4 +379,375 @@ body {
 .head-title{
   color: white;
   font-weight: bold
+}
+.menu-order{
+  text-align: center;
+}
+.menu-order .btn{
+  margin-top: 5%;
+  background-color: #EB7023;
+  color: black;
+}
+.menu-order .btn:hover{
+  background-color: rgb(167, 84, 32);
+}
+.menu-order input, .menu-order select{
+  border-color: #EB7023;
+}
+
+/************************* 
+        Media queries
+**************************/
+@media screen and (min-width: 300px)  {
+  #center{
+    width: 15em;
+  }
+  #top{
+    width: 5em;
+    left: 10%;
+    top: 23%;
+  }
+  #left{
+    width: 5em;
+    top: 23%;
+    left: 41%;
+  }
+  #right{
+    width: 5em;
+    top: 23%;
+    right: 9%;
+
+  }
+  #scroll {
+    font-size: 1.5em;
+    top: 70%;
+    left: 39%;
+  }
+  #intro-img{
+    display: none;
+  }
+  #intro h1{
+    font-size: 2em;
+  }
+  #sample h1 {
+    font-size: 2em;
+  }
+  #fresh h1{
+    padding-top: 19%;
+    font-size: 2em;
+  }
+  #mix h1{
+    font-size: 2em;
+  }
+  #subtitle{
+    font-size: 1.1em;
+  }
+  #number strong{
+    font-size: .9em;
+  }
+  #types h3{
+    font-size: 1.5em;
+  }
+  .order-wrapper{
+    left: 0;
+    padding: 20% 5% 0 5%;
+  }
+  .order-wrapper h1{
+    font-size: 2em;
+  }
+  .order-wrapper form{
+    padding-top: 6%;
+  }
+  .order-wrapper .btn{
+    margin-top: 10%;
+  }
+  #footer{
+    padding-left: 15%;
+  }
+
+  /* MENU */
+  #sample .card-deck .col-sm{
+    width: 50%;
+  }
+  .menu-order {
+    margin-top: 5%;
+  }
+  .head {
+    padding-top: 30%;
+  }
+}
+@media screen and (min-width: 600px)  {
+  #center{
+    width: 20em;
+  }
+  #top{
+    width: 7em;
+    top: 20%;
+    left: 44%;
+  }
+  #left{
+    width: 7em;
+    left: 10%;
+    top: 44%;
+  }
+  #right{
+    width: 7em;
+    top: 44%;
+    right: 10%;
+  }
+  #scroll{
+    font-size: 2em;
+    top: 80%;
+    left: 43%;
+  }
+  #intro-img{
+    display: block;
+  }
+  #intro img{
+    width: 80%;
+    padding-top: 18%;
+  }
+  #sample .card-deck .col-sm {
+    width: 60%;
+  }
+  #fresh h1 {
+    padding-top: 17%;
+    font-size: 2.5em;
+  }
+  #mix h1 {
+    font-size: 2.5em;
+  }
+  #number strong {
+    font-size: 1em;
+  }
+  #types h3 {
+    font-size: 1.8em;
+  }
+  #fresh .btn {
+    margin-top: 5%;
+    width: 20%;
+    font-size: 1.5em;
+  }
+  .order-wrapper h1 {
+    font-size: 3em;
+  }
+  .order-wrapper .btn {
+    margin-top: 9%;
+    width: 30%;
+    font-size: 1.5em;
+  }
+  label{
+    font-size: 1.5em;
+  }
+  .order-wrapper {
+    padding: 15% 5% 0 5%;
+  }
+  #footer{
+    padding-left: 15%;
+  }
+
+  /* MENU */
+  #menu h1{
+    font-size: 4.5em;
+  }
+  #menu h4{
+    font-size: 2.2em;
+  }
+  .head {
+    padding-top: 18%;
+  }
+  #sample h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #center {
+    width: 26em;
+  }
+  #left {
+    width: 11em;
+    left: 6%;
+    top: 43%;
+  }
+  #right{
+    width: 11em;
+    right: 6%;
+    top: 43%;
+  }
+  #top {
+    width: 11em;
+    top: 18%;
+    left: 42%;
+  }
+  #scroll {
+    font-size: 2.5em;
+    top: 78%;
+    left: 42%;
+  }
+  #intro h1 {
+    font-size: 3em;
+  }
+  #intro img {
+    padding-top: 10%;
+  }
+  #sample h1 {
+    font-size: 3em;
+  }
+  #subtitle {
+    font-size: 1.8em;
+  }
+  #fresh h1 {
+    font-size: 3em;
+  }
+  #mix h1 {
+    font-size: 3em;
+  }
+  #subtitle {
+    font-size: 2em;
+  }
+  .order-wrapper {
+    left: 9%;
+    padding: 20% 5% 0 5%;
+  }
+  .order-wrapper h1 {
+    font-size: 4em;
+  }
+  #footer {
+    padding-left: 10%;
+  }
+}
+@media screen and (min-width: 1200px){
+  #center{
+    width: 20em;
+  }
+  #top{
+    width: 7em;
+    top: 7%;
+    left: 46%;
+  }
+  #left{
+    width: 7em;
+    left: 27%;
+    top: 40%;
+  }
+  #right{
+    width: 7em;
+    top: 40%;
+    right: 27%;
+  }
+  #scroll{
+    font-size: 1.4em;
+    top: 80%;
+    left: 47%;
+  }
+  #intro-img{
+    padding-left: 3%;
+  }
+  #intro img{
+    width: 60%;
+  }
+  #subtitle{
+    font-size: 1.2em;
+  }
+  #sample h1{
+    font-size: 2.5em;
+  }
+  #fresh h1 {
+    font-size: 2.5em;
+    padding-top: 1%;
+  }
+  #fresh .btn {
+    margin-top: 2%;
+    width: 10%;
+    font-size: 1.2em;
+  }
+  #mix h1 {
+    font-size: 2.5em;
+  }
+  #subtitle {
+    font-size: 1em;
+  }
+  #types h3 {
+    font-size: 1.5em;
+  }
+  .order-wrapper h1 {
+    font-size: 2em;
+  }
+  .order-wrapper {
+    left: 18%;
+    padding: 4% 5% 0 5%;
+  }
+  label {
+    font-size: 1em;
+  }
+  .order-wrapper .btn {
+    margin-top: 6%;
+    width: 20%;
+    font-size: 1em;
+  }
+  #footer {
+    padding-left: 20%;
+  }
+
+  /* MENU */
+  .head {
+    padding-top: 4%;
+  }
+  #menu h1 {
+    font-size: 3em;
+  }
+  #menu h4 {
+    font-size: 2em;
+  }
+  #sample h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #center {
+    width: 23em;
+  }
+  #top {
+    width: 8em;
+    top: 12%;
+    left: 46%;
+  }
+  #left {
+    width: 8em;
+    top: 43%;
+    left: 25%;
+  }
+  #right {
+    width: 8em;
+    top: 43%;
+    right: 25%;
+  }
+  #scroll {
+    font-size: 2em;
+    left: 46%;
+  }
+  #intro p {
+    font-size: 1.5em;
+  }
+  #fresh h1 {
+    padding-top: 2%;
+  }
+  #fresh .btn {
+    margin-top: 2%;
+  }
+  #mix h1 {
+    margin-bottom: 2%;
+  }
+  .order-wrapper {
+    left: 18%;
+    padding: 5% 5% 0 5%;
+  }
+  #footer {
+    padding-left: 20%;
+  }
+
+  /* MENU */
+  .head {
+    padding-top: 5%;
+  }
 }

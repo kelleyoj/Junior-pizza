@@ -6,16 +6,16 @@ block content
       img#center(src="/images/icon.png", alt="")
       a(href=""): img#top(src="/images/home.png", alt="")
       a(href="/menu"): img#left(src="/images/menu.png", alt="")
-      a(href=""): img#right(src="/images/order.png", alt="")
+      a(href="javascript:void(0)"): img#right(src="/images/order.png", alt="")
       span#scroll SCROLL
         br  
         i.fas.fa-arrow-down
   .wrapper
     .container#intro
       .row
-        .col.sm
+        .col#intro-img
           img.img-fluid(src="/images/pizza.png", alt="") 
-        .col.sm
+        .col
           h1 
             span 
               em Welcome 
@@ -32,7 +32,7 @@ block content
         br
         strong delicious food
       p#subtitle
-        |Each bite different from the last. 
+        em Each bite different from the last. 
       .card-deck
         .card#no-border
           img.card-img-top(src='https://images.unsplash.com/photo-1535701796775-7f34b53736e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', alt='...')
@@ -164,7 +164,7 @@ block content
         .col-sm
           img#sides(src="https://images.unsplash.com/photo-1541696303913-8668e3f7e9fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", alt="")  
     
-    .container-fluid#place-order
+    .container-fluid.place-order#order
       img(src="https://images.unsplash.com/photo-1507927822105-9a760e57a419?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80", alt="")
       .order-wrapper
         h1 Place Your 
@@ -178,7 +178,7 @@ block content
               label(for="address") Address
               input#address.form-control(type='text')
             .col-3
-              label(for='pizzaSelector') Select Pizza
+              label(for='pizzaSelector') Pizza
               select#pizzaSelector.form-control
                 option
                 option Veggie mix &nbsp; $10.75
@@ -190,6 +190,6 @@ block content
                 option Black Olive Pep &nbsp; $11.12 
                 option Cheese Pizza &nbsp; $7.27
                 option The Ham Special &nbsp; $15.10
-          a(href="javascript:void(0)") 
-            button(disabled).btn Submit Order
+          a(href="javascript:void(0)")
+            span.btn Submit Order
 

@@ -113,5 +113,30 @@ block content
                             |$15.10
                     p.card-text
                         | Ham mixed with extra american cheese and mushroom
-            
+        .container.menu-order#order
+            h1 Place Your 
+                span#price Order
+            form
+                .row
+                    .col-3
+                        label(for="name") Name
+                        input#name.form-control(type='text')
+                    .col-6
+                        label(for="address") Address
+                        input#address.form-control(type='text')
+                    .col-3
+                        label(for='pizzaSelector') Pizza
+                        select#pizzaSelector.form-control
+                            option
+                            option Veggie mix &nbsp; $10.75
+                            option Steaker &nbsp; $14.65
+                            option Mac Attack &nbsp; $12.86
+                            option Leafer &nbsp; $13.31
+                            option Tomato Attack &nbsp; $ 14.65
+                            option Ranch &nbsp; $16.10
+                            option Black Olive Pep &nbsp; $11.12 
+                            option Cheese Pizza &nbsp; $7.27
+                            option The Ham Special &nbsp; $15.10
+                a(href="javascript:void(0)")#menu-order
+                    .btn Submit Order      
             

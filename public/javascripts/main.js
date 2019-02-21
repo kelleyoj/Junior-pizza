@@ -1,8 +1,8 @@
 $(function () {
     var isVisible = false;
-    if($('div').hasClass("hero")){
+    if ($('div').hasClass("hero")) {
         $("#open").hide();
-    }else{
+    } else {
         $("#open").show();
     }
 
@@ -19,15 +19,18 @@ $(function () {
     $("#scroll").click(function () {
         scroll('#intro');
     });
-    $('#place').click(function(){
-        scroll('#place-order');
+    $('#place').click(function () {
+        scroll('#order');
     });
     $('#contact').click(function () {
         scroll('#footer')
     });
+    $('#right').click(function(){
+        scroll('#order');
+    });
     $(window).scroll(function () {
         var shouldBeVisible = $(window).scrollTop() > 670;
-        if($("div").hasClass("hero")){
+        if ($("div").hasClass("hero")) {
             if (shouldBeVisible && !isVisible) {
                 isVisible = true;
                 $('#open').show();
@@ -39,7 +42,7 @@ $(function () {
     });
 
     // Functions
-    function isFixed(){
+    function isFixed() {
         $('#open').toggleClass('isFixed');
     }
     function scroll(destination) {
