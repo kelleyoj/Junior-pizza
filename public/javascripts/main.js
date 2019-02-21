@@ -2,10 +2,8 @@ $(function () {
     var isVisible = false;
     if($('div').hasClass("hero")){
         $("#open").hide();
-        console.log('hero');
     }else{
         $("#open").show();
-        console.log('NO-hero');
     }
 
     $('.closebtn').click(function () {
@@ -21,13 +19,15 @@ $(function () {
     $("#scroll").click(function () {
         scroll('#intro');
     });
+    $('#place').click(function(){
+        scroll('#place-order');
+    });
     $('#contact').click(function () {
         scroll('#footer')
     });
     $(window).scroll(function () {
         var shouldBeVisible = $(window).scrollTop() > 670;
         if($("div").hasClass("hero")){
-            console.log('Scroll');
             if (shouldBeVisible && !isVisible) {
                 isVisible = true;
                 $('#open').show();
