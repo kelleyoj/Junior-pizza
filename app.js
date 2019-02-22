@@ -2,7 +2,6 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
-var usersRouter = require('./routes/users');
 var dotenv = require('dotenv').config();
 
 var app = express();
@@ -18,7 +17,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'bower_components')));
 
 app.use('/', require('./routes/index'));
-app.use('/users', usersRouter);
 app.use('/menu', require('./routes/menu'));
 
 // catch 404 and forward to error handler
