@@ -404,6 +404,11 @@ body {
         Media queries
 **************************/
 @media screen and (min-width: 300px) {
+  #center {
+    width: 11em;
+  }
+}
+@media screen and (min-width: 370px) {
   .place-order {
     background-attachment: scroll;
   }
