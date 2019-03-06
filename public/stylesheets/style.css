@@ -7,15 +7,15 @@ body {
 **********************/
 
 /* side nav */
-#open{
+#open {
   position: fixed;
-  left: .8%;
-  padding: .5% .5% .5% .5%;
+  left: 0.8%;
+  padding: 0.5% 0.5% 0.5% 0.5%;
   margin-top: 2%;
-  background-color: #EB7023;
+  background-color: #eb7023;
   z-index: 100;
 }
-.isFixed{
+.isFixed {
   display: none;
 }
 .sidenav {
@@ -39,7 +39,7 @@ body {
   transition: 0.3s;
 }
 .sidenav a:hover {
-  color: #EB7023;
+  color: #eb7023;
   text-decoration: none;
 }
 .sidenav .closebtn {
@@ -50,12 +50,14 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
-.sidenav .closebtn:hover{
-  color: #EB7023;
+.sidenav .closebtn:hover {
+  color: #eb7023;
 }
 
 /* Icon animation */
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -74,258 +76,261 @@ body {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 /* Footer */
-#footer{
-  font-family: 'Montserrat', sans-serif;
+#footer {
+  font-family: "Montserrat", sans-serif;
   background-color: #131230;
   color: white;
   padding-top: 3%;
   padding-left: 20%;
   padding-bottom: 3%;
-  border-top: #818181 solid .5px;
+  border-top: #818181 solid 0.5px;
 }
-#footer p{
+#footer p {
   color: #818181;
 }
 
-#copyright{
+#copyright {
   padding-top: 3%;
 }
 
 /**********************
     INDEX PAGE HEADER
 **********************/
-.hero{
-   /* Sizing */
-   width: 100%;
-   height: 100vh;
-   
-   /* Flexbox stuff */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   
-   /* Text styles */
-   text-align: center;
-   color: white; /* ADD THIS LINE */
-   
-   /* Background styles */
-   background-image: url('/images/bg1.jpeg');
-   background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
+.hero {
+  /* Sizing */
+  width: 100%;
+  height: 100vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+  color: white; /* ADD THIS LINE */
+
+  /* Background styles */
+  background-image: url("/images/bg1.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-#center{
+#center {
   width: 20em;
 }
-#top{
+#top {
   position: absolute;
   width: 7em;
   top: 7%;
   left: 46%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-#left{
+#left {
   position: absolute;
   width: 7em;
   left: 27%;
   top: 40%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-#right{
+#right {
   position: absolute;
   width: 7em;
   top: 40%;
   right: 27%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-#top:hover,#left:hover,#right:hover{
+#top:hover,
+#left:hover,
+#right:hover {
   transform: scale(1.1);
 }
-#scroll{
+#scroll {
   position: absolute;
   font-size: 1.4em;
   top: 80%;
   left: 47%;
-  color: #EB7023;
-  transition: all .2s ease-in-out;
+  color: #eb7023;
+  transition: all 0.2s ease-in-out;
 }
-#scroll:hover{
+#scroll:hover {
   transform: scale(1.1);
 }
 
-.wrapper{
+.wrapper {
   position: relative;
   padding-top: 1%;
   padding-bottom: 0;
   border-bottom: #818181 solid 1px;
 }
-#intro{
+#intro {
   width: 100%;
   background: white;
   text-align: justify;
   padding-top: 15%;
   padding-bottom: 15%;
 }
-#intro h1{
-  font-family: 'Montserrat', sans-serif;
+#intro h1 {
+  font-family: "Montserrat", sans-serif;
   padding-top: 10%;
   line-height: 1.3em;
   padding-bottom: 6%;
 }
-#intro span{
-  color: #EB7023;
+#intro span {
+  color: #eb7023;
 }
-#intro p{
+#intro p {
   font-size: 1.2em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: justify;
-  color: #818181; 
+  color: #818181;
 }
-#intro img{
+#intro img {
   width: 80%;
   height: auto;
   /* object-fit: cover; */
 }
-#sample{
+#sample {
   width: 100%;
   background: white;
   margin-bottom: 6%;
 }
-#sample h1{
-  font-family: 'Montserrat', sans-serif;
+#sample h1 {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.3em;
   padding-bottom: 2%;
 }
-#sample span{
-  color: #EB7023;
+#sample span {
+  color: #eb7023;
 }
-#subtitle{
+#subtitle {
   font-size: 1.2em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: justify;
-  color: #818181; 
+  color: #818181;
 }
 
 /* CARD STYLE */
-#no-border{
+#no-border {
   border: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 5%;
 }
-.card img{
+.card img {
   height: 15em;
   width: 100%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.card:hover img{
+.card:hover img {
   transform: scale(1.01);
 }
-.card:hover .card-body{
+.card:hover .card-body {
   background: rgb(250, 163, 109);
 }
-.card:hover #price{
+.card:hover #price {
   color: black;
 }
-.card:hover .card-text{
+.card:hover .card-text {
   color: black;
 }
-.card-body{
+.card-body {
   background: #f9f9ff;
 }
-.card-text{
-  font-family: 'Montserrat', sans-serif;
-  color: #818181; 
+.card-text {
+  font-family: "Montserrat", sans-serif;
+  color: #818181;
 }
-#price{
-  color: #EB7023;
-  font-family: 'Montserrat', sans-serif;
+#price {
+  color: #eb7023;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Fresh ingre */
-#fresh{
+#fresh {
   height: 40vh;
   padding-left: 0;
   padding-right: 0;
   padding-top: 5%;
   margin-bottom: 7%;
-  
-  font-family: 'Montserrat', sans-serif;
-   /* Text styles */
+
+  font-family: "Montserrat", sans-serif;
+  /* Text styles */
   text-align: center;
   color: white;
   font-weight: bold;
 
-  background-image: url('/images/bg2.jpeg');
+  background-image: url("/images/bg2.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#fresh .btn{
+#fresh .btn {
   margin-top: 2%;
 }
 
 /* Mix and match */
-#mix{
+#mix {
   width: 100%;
   background: white;
   margin-bottom: 4%;
 }
-#mix h1{
-  font-family: 'Montserrat', sans-serif;
+#mix h1 {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.3em;
   padding-bottom: 1%;
   text-align: center;
 }
-#mix h2{
-  font-family: 'Montserrat', sans-serif;
+#mix h2 {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.3em;
   font-size: 2.5em;
 }
-#mix span{
-  color: #EB7023;
+#mix span {
+  color: #eb7023;
 }
-#types{
+#types {
   padding-left: 13%;
 }
-#types p{
+#types p {
   font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: justify;
-  color: #818181; 
-}
-#types ul{
   color: #818181;
 }
-#types h3, #types h6{
-  color: #EB7023;
+#types ul {
+  color: #818181;
 }
-#sides{
+#types h3,
+#types h6 {
+  color: #eb7023;
+}
+#sides {
   width: 90%;
   height: 18em;
   object-fit: cover;
   margin-bottom: 15%;
 }
 /* place order */
-.place-order{
+.place-order {
   height: 50vh;
   padding-left: 0;
   padding-right: 0;
   /* padding-top: 5%; */
-  
-  font-family: 'Montserrat', sans-serif;
-   /* Text styles */
+
+  font-family: "Montserrat", sans-serif;
+  /* Text styles */
   text-align: center;
   color: white;
   font-weight: bold;
 
   background-size: cover;
-  background-position:  bottom;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.place-order img{
+.place-order img {
   width: 100%;
   height: 50vh;
   z-index: 10;
@@ -335,137 +340,149 @@ body {
   position: absolute;
   left: 0;
 }
-.order-wrapper{
+.order-wrapper {
   padding-top: 5%;
   left: 20%;
   z-index: 20;
   position: absolute;
 }
-.order-wrapper .btn{
+.order-wrapper .btn {
   margin-top: 5%;
-  background-color: #EB7023;
+  background-color: #eb7023;
 }
-.order-wrapper .btn:hover{
-  background-color: rgb(167, 84, 32)
+.order-wrapper .btn:hover {
+  background-color: rgb(167, 84, 32);
 }
 
 /************************* 
         Menu page style
 **************************/
-#menu{
+#menu {
   height: 50vh;
   padding-left: 0;
   padding-right: 0;
   padding-top: 5%;
   margin-bottom: 9%;
-  
-  font-family: 'Montserrat', sans-serif;
-   /* Text styles */
+
+  font-family: "Montserrat", sans-serif;
+  /* Text styles */
   text-align: center;
   color: white;
   font-weight: bold;
 
-  background-image: url('/images/bg3.jpeg');
+  background-image: url("/images/bg3.jpeg");
   background-size: cover;
-  background-position:  bottom;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
- object-position: bottom;
+  object-position: bottom;
 }
-.head{
+.head {
   padding-top: 5%;
 }
-.head-title{
+.head-title {
   color: white;
-  font-weight: bold
+  font-weight: bold;
 }
-.menu-order{
+.menu-order {
   text-align: center;
 }
-.menu-order .btn{
+.menu-order .btn {
   margin-top: 5%;
-  background-color: #EB7023;
+  background-color: #eb7023;
   color: black;
 }
-.menu-order .btn:hover{
+.menu-order .btn:hover {
   background-color: rgb(167, 84, 32);
 }
-.menu-order input, .menu-order select{
-  border-color: #EB7023;
+.menu-order input,
+.menu-order select {
+  border-color: #eb7023;
 }
 
 /************************* 
         Media queries
 **************************/
-@media screen and (min-width: 300px)  {
-  #center{
+@media screen and (min-width: 300px) {
+  .place-order {
+    background-attachment: scroll;
+  }
+  .hero {
+    background-attachment: scroll;
+  }
+  #fresh {
+    background-attachment: scroll;
+  }
+  #center {
     width: 15em;
   }
-  #top{
+  #top {
     width: 5em;
     left: 10%;
     top: 23%;
   }
-  #left{
+  #left {
     width: 5em;
     top: 23%;
     left: 41%;
   }
-  #right{
+  #right {
     width: 5em;
     top: 23%;
     right: 9%;
-
   }
   #scroll {
     font-size: 1.5em;
     top: 70%;
     left: 39%;
   }
-  #intro-img{
+  #intro-img {
     display: none;
   }
-  #intro h1{
+  #intro h1 {
     font-size: 2em;
   }
   #sample h1 {
     font-size: 2em;
   }
-  #fresh h1{
+  #fresh h1 {
     padding-top: 19%;
     font-size: 2em;
   }
-  #mix h1{
+  #mix h1 {
     font-size: 2em;
   }
-  #subtitle{
+  #subtitle {
     font-size: 1.1em;
   }
-  #number strong{
-    font-size: .9em;
+  #number strong {
+    font-size: 0.9em;
   }
-  #types h3{
+  #types h3 {
     font-size: 1.5em;
   }
-  .order-wrapper{
+  .order-wrapper {
     left: 0;
     padding: 20% 5% 0 5%;
   }
-  .order-wrapper h1{
+  .order-wrapper h1 {
     font-size: 2em;
   }
-  .order-wrapper form{
+  .order-wrapper form {
     padding-top: 6%;
   }
-  .order-wrapper .btn{
+  .order-wrapper .btn {
     margin-top: 10%;
   }
-  #footer{
+  #footer {
     padding-left: 15%;
   }
 
   /* MENU */
-  #sample .card-deck .col-sm{
+  #menu {
+    background-attachment: scroll;
+  }
+  #sample .card-deck .col-sm {
     width: 50%;
   }
   .menu-order {
@@ -475,34 +492,34 @@ body {
     padding-top: 30%;
   }
 }
-@media screen and (min-width: 600px)  {
-  #center{
+@media screen and (min-width: 600px) {
+  #center {
     width: 20em;
   }
-  #top{
+  #top {
     width: 7em;
     top: 20%;
     left: 44%;
   }
-  #left{
+  #left {
     width: 7em;
     left: 10%;
     top: 44%;
   }
-  #right{
+  #right {
     width: 7em;
     top: 44%;
     right: 10%;
   }
-  #scroll{
+  #scroll {
     font-size: 2em;
     top: 80%;
     left: 43%;
   }
-  #intro-img{
+  #intro-img {
     display: block;
   }
-  #intro img{
+  #intro img {
     width: 80%;
     padding-top: 18%;
   }
@@ -535,21 +552,21 @@ body {
     width: 30%;
     font-size: 1.5em;
   }
-  label{
+  label {
     font-size: 1.5em;
   }
   .order-wrapper {
     padding: 15% 5% 0 5%;
   }
-  #footer{
+  #footer {
     padding-left: 15%;
   }
 
   /* MENU */
-  #menu h1{
+  #menu h1 {
     font-size: 4.5em;
   }
-  #menu h4{
+  #menu h4 {
     font-size: 2.2em;
   }
   .head {
@@ -568,7 +585,7 @@ body {
     left: 6%;
     top: 43%;
   }
-  #right{
+  #right {
     width: 11em;
     right: 6%;
     top: 43%;
@@ -615,40 +632,40 @@ body {
     padding-left: 10%;
   }
 }
-@media screen and (min-width: 1200px){
-  #center{
+@media screen and (min-width: 1200px) {
+  #center {
     width: 20em;
   }
-  #top{
+  #top {
     width: 7em;
     top: 8%;
     left: 46%;
   }
-  #left{
+  #left {
     width: 7em;
     left: 27%;
     top: 40%;
   }
-  #right{
+  #right {
     width: 7em;
     top: 40%;
     right: 27%;
   }
-  #scroll{
+  #scroll {
     font-size: 1.4em;
     top: 80%;
     left: 47%;
   }
-  #intro-img{
+  #intro-img {
     padding-left: 3%;
   }
-  #intro img{
+  #intro img {
     width: 60%;
   }
-  #subtitle{
+  #subtitle {
     font-size: 1.2em;
   }
-  #sample h1{
+  #sample h1 {
     font-size: 2.5em;
   }
   #fresh h1 {
